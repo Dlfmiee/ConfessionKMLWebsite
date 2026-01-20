@@ -1,2 +1,2 @@
 # ConfessionKMLWebsite
-Project makin confession kml instead of group telegram HAHA
+Project confession kml instead of group telegram HAHA
