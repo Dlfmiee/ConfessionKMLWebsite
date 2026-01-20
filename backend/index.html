@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfessionKML - Student Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Confession<span>KML</span></h1>
+            <div class="nav-links">
+                <a href="#" class="active">Feed</a>
+                <a href="#post">Submit</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="post" class="post-section">
+            <div class="glass-card post-card">
+                <h2>Share a Confession</h2>
+                <p class="subtitle">Completely anonymous. No logins. Just your voice.</p>
+                <textarea id="confessionInput" placeholder="Write your message here..."></textarea>
+                <button id="submitBtn" class="primary-btn">Post Secretly</button>
+            </div>
+        </section>
+
+        <section class="feed-section">
+            <div class="feed-header">
+                <h2>Recent Confessions</h2>
+                <button id="refreshBtn" class="icon-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"></path></svg>
+                </button>
+            </div>
+            <div id="confessionFeed" class="feed-container">
+                <!-- Confessions will be injected here -->
+                <div class="loading-spinner">Loading secrets...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
